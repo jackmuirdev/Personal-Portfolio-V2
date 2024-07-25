@@ -87,6 +87,7 @@ export default function Header() {
         <button
           className="md:hidden text-3xl focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu Toggle"
         >
           <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
         </button>
@@ -96,6 +97,7 @@ export default function Header() {
           <a
             href="https://github.com/jackmuirdev"
             className="hover:text-gray-700 p-4"
+            aria-label="GitHub"
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -106,6 +108,7 @@ export default function Header() {
           <a
             href="https://www.linkedin.com/in/jack-muir-462689281/"
             className="hover:text-gray-700 p-4"
+            aria-label="LinkedIn"
           >
             <FontAwesomeIcon
               icon={faLinkedin}

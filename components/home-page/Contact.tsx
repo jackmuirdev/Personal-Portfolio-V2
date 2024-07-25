@@ -20,7 +20,7 @@ export default function Contact() {
           <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
           <textarea id="message" name="message" required className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows={5}></textarea>
         </div>
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
+        <button aria-label='send' type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
       </form>
     </section>
   );

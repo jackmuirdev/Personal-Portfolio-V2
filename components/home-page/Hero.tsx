@@ -21,9 +21,9 @@ export default function Hero() {
         <h1 className="text-6xl md:text-8xl font-extrabold text-gray-900 mb-4 leading-tight">
           Jack Muir
         </h1>
-        <p className="text-2xl md:text-3xl text-gray-700 mb-4">
+        <h2 className="text-2xl md:text-3xl text-gray-700 mb-4">
           Full Stack Developer
-        </p>
+        </h2>
         <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           I am a full stack developer with a passion for building innovative web
           applications using the MERN Stack & Next.js.

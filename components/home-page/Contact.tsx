@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="container mx-auto px-4 py-16">
-      <h2 className="text-2xl font-bold mb-4 text-center">Contact</h2>
+    <section id="contact" className="container mx-auto px-4 py-16" style={{ maxWidth: '800px' }}>
+      <h2 className="text-3xl font-bold mb-4 text-center">Contact</h2>
       <p className="text-gray-700 leading-relaxed mb-8 text-center">
         Feel free to reach out to me via email at <a href="jmuirbusiness@gmail.com" className="text-blue-500 hover:underline">jmuirbusiness@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/jack-muir-462689281/" className="text-blue-500 hover:underline">LinkedIn</a>.
       </p>

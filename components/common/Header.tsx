@@ -50,32 +50,44 @@ export default function Header() {
           <div className="flex flex-col md:flex-row md:items-center md:gap-10">
             <a
               href="#home"
-              onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
-              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("home");
+              }}
+              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0 text-lg"
             >
               Home
               <span className="absolute left-0 -bottom-0 w-full h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a
               href="#about"
-              onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
-              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("about");
+              }}
+              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0 text-lg"
             >
               About
               <span className="absolute left-0 -bottom-0 w-full h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a
               href="#projects"
-              onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
-              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("projects");
+              }}
+              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0 text-lg"
             >
               Projects
               <span className="absolute left-0 -bottom-0 w-full h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a
               href="#contact"
-              onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
-              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
+              className="relative group text-gray-800 hover:text-gray-900 p-4 md:p-0 text-lg"
             >
               Contact
               <span className="absolute left-0 -bottom-0 w-full h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -96,7 +108,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <a
             href="https://github.com/jackmuirdev"
-            className="hover:text-gray-700 p-4"
+            className="hover:text-gray-700 p-4 text-lg"
             aria-label="GitHub"
           >
             <FontAwesomeIcon
@@ -107,7 +119,7 @@ export default function Header() {
           </a>
           <a
             href="https://www.linkedin.com/in/jack-muir-462689281/"
-            className="hover:text-gray-700 p-4"
+            className="hover:text-gray-700 p-4 text-lg"
             aria-label="LinkedIn"
           >
             <FontAwesomeIcon
@@ -117,9 +129,9 @@ export default function Header() {
             />
           </a>
           <a
-            href="/Jack Muir CV.pdf"
+            href="/Personal CV.pdf"
             target="_blank"
-            className="hover:text-gray-400 px-4 py-2 border border-gray-700 rounded-lg flex items-center bg-blue-600 text-white"
+            className="hover:text-gray-400 -mt-2 px-4 py-2 border border-gray-700 rounded-lg flex items-center bg-blue-600 text-white text-lg"
           >
             <FontAwesomeIcon icon={faFileAlt} className="mr-2" size="lg" />
             <span>Resume</span>

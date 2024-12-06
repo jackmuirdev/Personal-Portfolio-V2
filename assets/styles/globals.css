@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradientCycle {
+  0% {
+    background-position: 0% 50%;
+    background-size: 400% 400%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradientCycle 15s ease infinite;
+}
+
+/* Add this to your global styles */
+@keyframes borderTravel {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: #3498db;
+  }
+  50% {
+    border-right-color: #3498db;
+  }
+  75% {
+    border-bottom-color: #3498db;
+  }
+  100% {
+    border-left-color: #3498db;
+  }
+}

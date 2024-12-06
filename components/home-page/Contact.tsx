@@ -1,27 +1,83 @@
-import React from 'react';
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="container mx-auto px-4 py-16" style={{ maxWidth: '800px' }}>
-      <h2 className="text-3xl font-bold mb-4 text-center">Contact</h2>
-      <p className="text-gray-700 leading-relaxed mb-8 text-center">
-        Feel free to reach out to me via email at <a href="jmuirbusiness@gmail.com" className="text-blue-500 hover:underline">jmuirbusiness@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/jack-muir-462689281/" className="text-blue-500 hover:underline">LinkedIn</a>.
+    <section
+      id="contact"
+      className="relative flex flex-col items-center justify-center py-16 text-white px-6"
+    >
+      <h2 className="text-4xl font-bold text-center text-white mb-4">
+        Contact Me
+      </h2>
+      <p className="text-lg text-center px-8 text-gray-300 mb-8">
+        If you’d like to get in touch, feel free to reach out via email or
+        connect with me on LinkedIn.
       </p>
-      <form action="https://formspree.io/f/xoqgjklr" method="POST" className="bg-white p-6 rounded-lg shadow-lg">
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
-          <input type="text" id="name" name="name" required className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" />
+
+      {/* Contact Form */}
+      <motion.form
+        action="https://formspree.io/f/xoqgjklr"
+        method="POST"
+        className="bg-gray-700 p-8 rounded-lg shadow-2xl mt-8 max-w-lg w-full"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
+        <div className="mb-6">
+          <label
+            htmlFor="name"
+            className="block text-lg font-semibold text-gray-300 mb-2"
+          >
+            Your Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            className="w-full px-4 py-2 bg-gray-800 text-gray-300 border-2 border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
         </div>
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
-          <input type="email" id="email" name="email" required className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" />
+        <div className="mb-6">
+          <label
+            htmlFor="email"
+            className="block text-lg font-semibold text-gray-300 mb-2"
+          >
+            Your Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="w-full px-4 py-2 bg-gray-800 text-gray-300 border-2 border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
         </div>
-        <div className="mb-4">
-          <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
-          <textarea id="message" name="message" required className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows={5}></textarea>
+        <div className="mb-6">
+          <label
+            htmlFor="message"
+            className="block text-lg font-semibold text-gray-300 mb-2"
+          >
+            Your Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows={4}
+            className="w-full px-4 py-2 bg-gray-800 text-gray-300 border-2 border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
         </div>
-        <button aria-label='send' type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
-      </form>
+        <button
+          type="submit"
+          className="hover:text-white w-full py-3 border font-semibold border-blue-300 rounded-lg bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
+        >
+          Send Message
+        </button>
+      </motion.form>
     </section>
   );
 }

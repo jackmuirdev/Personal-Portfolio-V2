@@ -6,20 +6,27 @@ import Hero from "@/components/home-page/Hero";
 import Projects from "@/components/home-page/Projects";
 
 export default function HomePage() {
+  
   return (
-    <div
-      className="relative min-h-screen"
-      style={{
-        background: "linear-gradient(135deg, #a3c2e2, #ffffff, #a3c2e2)",
-      }}
-    >
+    <div className="relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-700 animate-gradient bg-[length:400%_400%]">
+      {/* Header */}
       <Header />
-      <main>
+
+      <main className="pt-24">
+        {/* Hero Section */}
         <Hero />
+
+        {/* About Section */}
         <About />
+
+        {/* Projects Section */}
         <Projects />
+
+        {/* Contact Section */}
         <Contact />
       </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

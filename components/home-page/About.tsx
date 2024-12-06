@@ -24,7 +24,7 @@ export default function About() {
   return (
     <section
       id="skills"
-      className="relative flex flex-col items-center justify-center py-16 text-white px-44"
+      className="relative flex flex-col items-center justify-center py-16 text-white lg:px-44 px-16"
     >
       <h2 className="text-4xl font-bold mb-4">Skills</h2>
       <p className="text-lg text-center px-8">

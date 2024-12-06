@@ -68,8 +68,8 @@ export default function Hero() {
         <Particle />
       </div>
       {/* Main Content */}
-      <div className="flex flex-row items-center justify-between w-full px-6 max-w-6xl mx-auto z-10">
-        <div className="text-left">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full px-6 max-w-6xl mx-auto z-10">
+        <div className="text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
             Jack Muir
           </h1>
@@ -84,7 +84,7 @@ export default function Hero() {
             Full Stack Developer passionate about building modern web
             applications and delivering high-quality solutions.
           </p>
-          <div className="flex justify-start space-x-6">
+          <div className="flex justify-center md:justify-start space-x-6">
             <a
               href="#contact"
               className="hover:text-white px-12 py-6 border border-blue-300 rounded-lg flex items-center bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
@@ -101,7 +101,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Interactive Image */}
-        <div className="relative z-0">
+        <div className="relative z-0 hidden md:block">
           <motion.div
             whileHover={{ scale: 1.2 }} // Pops out when hovered
             className="w-96 h-96 relative group" // Increase size and add group class

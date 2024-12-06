@@ -44,7 +44,7 @@ export default function Header() {
         <a
           href="/Personal CV.pdf"
           target="_blank"
-          className="hover:text-white px-6 py-3 border border-blue-300 rounded-lg flex items-center bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
+          className="hidden md:block hover:text-white px-6 py-3 border border-blue-300 rounded-lg items-center bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
         >
           <FontAwesomeIcon icon={faFileAlt} className="mr-2" size="lg" />
           <span>Resume</span>
@@ -54,7 +54,7 @@ export default function Header() {
         <div
           className={`${
             menuOpen ? "flex" : "hidden"
-          } md:flex md:items-center md:space-x-10 absolute top-0 left-0 mt-16 md:relative md:mt-0 w-full md:w-auto bg-gray-800 md:bg-transparent shadow-lg md:shadow-none justify-center`}
+          } flex-col md:flex md:flex-row md:items-center md:space-x-10 absolute top-0 left-0 mt-16 md:relative md:mt-0 w-full md:w-auto bg-gray-800 md:bg-transparent shadow-lg md:shadow-none justify-center`}
         >
           <div className="flex flex-col md:flex-row md:items-center md:gap-10">
             <a

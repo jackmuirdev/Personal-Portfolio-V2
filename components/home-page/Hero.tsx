@@ -92,7 +92,7 @@ export default function Hero() {
               Get in Touch
             </a>
             <a
-              href="/Personal CV.pdf"
+              href="/JackMuirCV.pdf"
               target="_blank"
               className="hover:text-white px-12 py-6 border border-blue-300 rounded-lg flex items-center bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
             >

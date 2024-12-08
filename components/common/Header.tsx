@@ -42,7 +42,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between relative">
         <a
-          href="/Personal CV.pdf"
+          href="/JackMuirCV.pdf"
           target="_blank"
           className="hidden md:block hover:text-white px-6 py-3 border border-blue-300 rounded-lg items-center bg-transparent text-white text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:bg-blue-300"
         >
